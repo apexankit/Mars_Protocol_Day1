@@ -38,8 +38,8 @@ plt.legend(title='Asset Type')
 
 # CRITICAL STEP: SAVE THE CHART
 # In automation, we don't 'show' charts, we save them to send in emails.
-plt.savefig('growth_chart.png', dpi=300) 
-print(">> Success: 'growth_chart.png' saved to your folder.")
+plt.savefig('day5_growth_chart.png', dpi=300) 
+print(">> Success: 'day5_growth_chart.png' saved to your folder.")
 
 # ==========================================
 # CHART 2: ASSET ALLOCATION (Bar Chart)
@@ -62,8 +62,8 @@ for index, row in enumerate(june_data.itertuples()):
     # logic to place text: x_position, y_height, text_value
     plt.text(index, row.Value + 1000, f"₹{row.Value}", color='black', ha="center")
 
-plt.savefig('allocation_chart.png', dpi=300)
-print(">> Success: 'allocation_chart.png' saved to your folder.")
+plt.savefig('day5_allocation_chart.png', dpi=300)
+print(">> Success: 'day5_allocation_chart.png' saved to your folder.")
 
 # Show them on screen now
 plt.show()
